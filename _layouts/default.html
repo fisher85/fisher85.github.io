@@ -1,29 +1,58 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="Решения и услуги в области информационной безопасности">
+    <meta name="author" content="Лаборатория информационной безопасности">
+    <link rel="icon" href="favicon.ico">
+
+    <title>{{ page.title }}</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  
+  <body>
+  
+    <style>
+      body {
+        min-height: 75rem;
+        padding-top: 4.5rem;
+      }
+    </style>
+
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #e3f2fd;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Лаборатория</a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="soa.html">СОА</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="siem.html">SIEM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reestr.html">Реестр X.509</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="smi.html">Анализ СМИ</a>
+          </li>          
+        </ul>
+      </div>
+    </nav>  
+
+    {{ content }}
 			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
