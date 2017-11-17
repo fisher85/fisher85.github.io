@@ -1,0 +1,2 @@
+<add key="FromLogin" value="WeGpdbnggfTV5T9VLXIL@gmail.com" />
+<add key="FromPassword" value="aic8e0dhdeuhabjhq1u2" />
